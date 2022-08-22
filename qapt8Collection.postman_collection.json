@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "fbc4ae31-e96a-4c02-a5f5-4ae8bfca1290",
+		"name": "qapt8Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22884827"
+	},
+	"item": [
+		{
+			"name": "EmployeeManager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html",
+					"protocol": "https",
+					"host": [
+						"devmountain-qa",
+						"github",
+						"io"
+					],
+					"path": [
+						"employee-manager",
+						"1.2_Version",
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

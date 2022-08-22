@@ -21,4 +21,3 @@ await google.driver.takeScreenshot(), "base64",
 afterAll(async () => {
     await google.driver.quit()
 })
-`   1q～`
