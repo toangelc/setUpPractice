@@ -1,24 +1,22 @@
 import {Google} from './baseGooglePage'
-import {Driver} from 'selenium-webdriver/chrome'
 const fs = require('fs')
 const google = new Google()
 
-test('do a search'), async () => {
+test('do a seach', async () => {
     await google.navigate()
-    await google.search('Friends')
+    await google.search('Dove Chocolate & Almond')
     let text = await google.getResults()
-    expect(text).toContain('Friends')
-await fs.writeFile(`${__dirname}/google.png`),
-await google.driver.takeScreenshot(), "base64", 
-(e) => {
-    if (e) console.error(e)
-    else console.log('Save Successful')
-}
-)
-fs.writeFile(`${__dirname}/test/txt`, Text, (e) => {
-if (e) console.error(e)
-else console.log('Save Successful')
-})
+    expect(text).toContain('Dove Chocolate & Almond')
+    await fs.writeFile(`${__dirname}/test.txt`, text, (e) => {
+        if (e) console.error(e)
+        else console.log('Save Successful')
+    })
+    await fs.writeFile(`${__dirname}/googleScreenshot.png`, 
+    await google.driver.takeScreenshot(), "base64", 
+    (e) => {
+        if (e) console.error(e)
+        else console.log("Save Sucessful")
+    })
 })
 afterAll(async () => {
     await google.driver.quit()

@@ -20,7 +20,7 @@ constructor(options?: Options) {
 async navigate(url?: string): Promise<void> {
     if (url) return await this.driver.get(url)
     else if (this.url) return await this.driver.get(this.url)
-    else return Promise.reject('https://www.google.com/')
+    else return Promise.reject('You need an url')
 
 }
 
